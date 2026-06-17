@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Government Veterinary Policlinic, Dindigul",
+    "address": "Near Bus Stand, Dindigul, Tamil Nadu 624001",
+    "phone": "+914512423101",
+    "latitude": 10.3673,
+    "longitude": 77.9803
+  },
+  {
+    "name": "Palani Road Veterinary Clinic",
+    "address": "Palani Road, Dindigul, Tamil Nadu 624002",
+    "phone": "+919443567890",
+    "latitude": 10.3642,
+    "longitude": 77.9654
+  },
+  {
+    "name": "Dindigul Pet & Cattle Care",
+    "address": "Trichy Road, Dindigul, Tamil Nadu 624003",
+    "phone": "+919876543210",
+    "latitude": 10.3712,
+    "longitude": 77.9911
+  },
+  {
+    "name": "Oddanchatram Government Veterinary Hospital",
+    "address": "Dharapuram Road, Oddanchatram, Tamil Nadu 624619",
+    "phone": "+914551220202",
+    "latitude": 10.4851,
+    "longitude": 77.7473
+  },
+  {
+    "name": "Natham Road Veterinary Clinic",
+    "address": "Natham Road, Dindigul, Tamil Nadu 624004",
+    "phone": "+919944882211",
+    "latitude": 10.3585,
+    "longitude": 78.0125
+  }
+]

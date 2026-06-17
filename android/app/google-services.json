@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1096428806906",
+    "project_id": "toxic-plant-detection-b8e46",
+    "storage_bucket": "toxic-plant-detection-b8e46.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096428806906:android:0a9e221bbbd4021d495f43",
+        "android_client_info": {
+          "package_name": "com.srivarshan.toxicplantdetection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096428806906-elmp8vh3u0ukgvahdiuf6osj89iiudi4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMWBPY2KjEVdoLKIndq-WQY4gZgNcKVEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096428806906-elmp8vh3u0ukgvahdiuf6osj89iiudi4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

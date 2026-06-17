@@ -1,0 +1,1735 @@
+[
+  {
+    "plantId": "lantana_camara",
+    "tamilName": "உண்ணிச்செடி (Lantana)",
+    "englishName": "Lantana Camara",
+    "scientificName": "Lantana camara",
+    "localName": "உண்ணிச்செடி / Unni Chedi",
+    "imageUrl": "https://picsum.photos/id/102/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "high",
+      "flower": "medium",
+      "stem": "medium",
+      "seed": "high",
+      "root": "low",
+      "fruit": "high"
+    },
+    "toxicComponents": "Lantadene A and Lantadene B (triterpenoids)",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with wild sage or tea bush.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Buffalo"
+    ],
+    "susceptibilityLevel": "critical",
+    "symptomOnsetTime": "2-4 hours after ingestion",
+    "symptomsText": "Photosensitization, jaundice, loss of appetite, constipation, followed by severe diarrhea, swollen muzzle and ears.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/102/400/300"
+    ],
+    "firstAid": "Move the animal to a shaded, dark area immediately to prevent photosensitive skin burns. Provide plenty of fresh water and electrolytes.",
+    "treatment": "Administer activated charcoal (2-4 g/kg body weight) via stomach tube. Fluid therapy and supportive treatment by a veterinarian.",
+    "warningMessage": "Extremely toxic to cattle! Consuming even a small amount can lead to liver failure and death."
+  },
+  {
+    "plantId": "parthenium_hysterophorus",
+    "tamilName": "பார்த்தீனியம்",
+    "englishName": "Parthenium Hysterophorus",
+    "scientificName": "Parthenium hysterophorus",
+    "localName": "பார்த்தீனியம் / காங்கிரஸ் புல் / Congress Grass",
+    "imageUrl": "https://picsum.photos/id/106/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "high",
+      "flower": "high",
+      "stem": "medium",
+      "seed": "high",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Parthenin (sesquiterpene lactone)",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with white top or wild carrot.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Buffalo",
+      "Horse"
+    ],
+    "susceptibilityLevel": "high",
+    "symptomOnsetTime": "12-24 hours after contact or ingestion",
+    "symptomsText": "Severe dermatitis, loss of hair, skin lesions, inflammation of muzzle, diarrhea, decreased milk yield, and respiratory issues.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/106/400/300"
+    ],
+    "firstAid": "Wash affected skin areas with mild soap and water. Keep the animal away from parthenium infested pastures.",
+    "treatment": "Antihistamines and topical corticosteroid creams for skin irritation. Supportive therapy for digestive symptoms.",
+    "warningMessage": "Causes severe allergic contact dermatitis in both livestock and humans. Keep livestock away."
+  },
+  {
+    "plantId": "calotropis_gigantea",
+    "tamilName": "எருக்கன்",
+    "englishName": "Crown Flower (Calotropis)",
+    "scientificName": "Calotropis gigantea",
+    "localName": "எருக்கஞ்செடி / Erukku",
+    "imageUrl": "https://picsum.photos/id/111/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "high",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "high",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Calotropin, gigantin (cardiac glycosides)",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Buffalo"
+    ],
+    "susceptibilityLevel": "high",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/111/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Crown Flower (Calotropis)."
+  },
+  {
+    "plantId": "nerium_oleander",
+    "tamilName": "அரளி",
+    "englishName": "Oleander (Nerium)",
+    "scientificName": "Nerium oleander",
+    "localName": "அரளி விதை / Karaveera",
+    "imageUrl": "https://picsum.photos/id/120/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "critical",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "critical",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Oleandrin, neriine (cardiac glycosides)",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Buffalo",
+      "Horse",
+      "Dog",
+      "Cat"
+    ],
+    "susceptibilityLevel": "critical",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/120/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Oleander (Nerium)."
+  },
+  {
+    "plantId": "ricinus_communis",
+    "tamilName": "ஆமணக்கு",
+    "englishName": "Castor Bean",
+    "scientificName": "Ricinus communis",
+    "localName": "விளக்கெண்ணெய் செடி / Amanakku",
+    "imageUrl": "https://picsum.photos/id/132/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "critical",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "critical",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Ricin (lectin glycoprotein)",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Buffalo",
+      "Horse"
+    ],
+    "susceptibilityLevel": "critical",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/132/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Castor Bean."
+  },
+  {
+    "plantId": "datura_stramonium",
+    "tamilName": "ஊமத்தை",
+    "englishName": "Jimsonweed (Datura)",
+    "scientificName": "Datura stramonium",
+    "localName": "ஊமத்தம்பூ / Oomathai",
+    "imageUrl": "https://picsum.photos/id/145/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "critical",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "critical",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Tropane alkaloids (atropine, scopolamine)",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Buffalo",
+      "Horse"
+    ],
+    "susceptibilityLevel": "critical",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/145/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Jimsonweed (Datura)."
+  },
+  {
+    "plantId": "abrus_precatorius",
+    "tamilName": "குன்றிமணி",
+    "englishName": "Rosary Pea (Abrus)",
+    "scientificName": "Abrus precatorius",
+    "localName": "குண்டுமணி / Kundumani",
+    "imageUrl": "https://picsum.photos/id/152/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "critical",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "critical",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Abrin (highly toxic ribosome-inactivating protein)",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Horse"
+    ],
+    "susceptibilityLevel": "critical",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/152/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Rosary Pea (Abrus)."
+  },
+  {
+    "plantId": "ipomoea_carnea",
+    "tamilName": "நெய்வேலி காட்டாமணக்கு",
+    "englishName": "Pink Morning Glory",
+    "scientificName": "Ipomoea carnea",
+    "localName": "நெய்வேலி காட்டாமணக்கு / Neyveli Kattamanakku",
+    "imageUrl": "https://picsum.photos/id/160/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "medium",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "medium",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Swainsonine, calystegine alkaloids",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "medium",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/160/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Pink Morning Glory."
+  },
+  {
+    "plantId": "argemone_mexicana",
+    "tamilName": "பிரம்மதண்டு",
+    "englishName": "Mexican Prickly Poppy",
+    "scientificName": "Argemone mexicana",
+    "localName": "பிரம்மதண்டு / Kudiyotti",
+    "imageUrl": "https://picsum.photos/id/175/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "high",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "high",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Sanguinarine, dihydrosanguinarine",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Buffalo"
+    ],
+    "susceptibilityLevel": "high",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/175/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Mexican Prickly Poppy."
+  },
+  {
+    "plantId": "gloriosa_superba",
+    "tamilName": "செங்காந்தள்",
+    "englishName": "Flame Lily",
+    "scientificName": "Gloriosa superba",
+    "localName": "கண்வலிப்பூ / Senkanthal",
+    "imageUrl": "https://picsum.photos/id/188/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "critical",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "critical",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Colchicine, gloriosine",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Buffalo"
+    ],
+    "susceptibilityLevel": "critical",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/188/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Flame Lily."
+  },
+  {
+    "plantId": "jatropha_curcas",
+    "tamilName": "காட்டாமணக்கு",
+    "englishName": "Physic Nut (Jatropha)",
+    "scientificName": "Jatropha curcas",
+    "localName": "காட்டாமணக்கு / Kattamanakku",
+    "imageUrl": "https://picsum.photos/id/201/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "high",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "high",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Jatrophin (toxalbumin), phorbol esters",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Buffalo"
+    ],
+    "susceptibilityLevel": "high",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/201/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Physic Nut (Jatropha)."
+  },
+  {
+    "plantId": "ageratum_conyzoides",
+    "tamilName": "வெள்ளைப் பூண்டு தழை",
+    "englishName": "Goatweed",
+    "scientificName": "Ageratum conyzoides",
+    "localName": "வெள்ளைப் பூண்டு தழை / Ageratum",
+    "imageUrl": "https://picsum.photos/id/212/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "medium",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "medium",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Pyrrolizidine alkaloids",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "medium",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/212/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Goatweed."
+  },
+  {
+    "plantId": "euphorbia_tirucalli",
+    "tamilName": "திருகுகள்ளி",
+    "englishName": "Pencil Tree (Euphorbia)",
+    "scientificName": "Euphorbia tirucalli",
+    "localName": "திருகுகள்ளி / Kalli",
+    "imageUrl": "https://picsum.photos/id/220/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "medium",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "medium",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Diterpene esters (highly irritant latex)",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Dog",
+      "Cat"
+    ],
+    "susceptibilityLevel": "medium",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/220/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Pencil Tree (Euphorbia)."
+  },
+  {
+    "plantId": "tribulus_terrestris",
+    "tamilName": "நெருஞ்சி",
+    "englishName": "Puncture Vine",
+    "scientificName": "Tribulus terrestris",
+    "localName": "நெருஞ்சி முள் / Nerunjil",
+    "imageUrl": "https://picsum.photos/id/235/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "low",
+      "flower": "low",
+      "stem": "low",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Steroidal saponins causing photosensitization",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Sheep",
+      "Goat"
+    ],
+    "susceptibilityLevel": "low",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/235/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Puncture Vine."
+  },
+  {
+    "plantId": "cleome_viscosa",
+    "tamilName": "நாய்க்கடுகு",
+    "englishName": "Wild Mustard",
+    "scientificName": "Cleome viscosa",
+    "localName": "நாய்க்கடுகு / Naikkadugu",
+    "imageUrl": "https://picsum.photos/id/240/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "low",
+      "flower": "low",
+      "stem": "low",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Glucosinolates",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "low",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/240/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Wild Mustard."
+  },
+  {
+    "plantId": "heliotropium_indicum",
+    "tamilName": "தேள்கொடுக்கு",
+    "englishName": "Indian Heliotrope",
+    "scientificName": "Heliotropium indicum",
+    "localName": "தேள்கொடுக்கு / Thel Kodukku",
+    "imageUrl": "https://picsum.photos/id/250/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "medium",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "medium",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Pyrrolizidine alkaloids (helotrine)",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Horse"
+    ],
+    "susceptibilityLevel": "medium",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/250/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Indian Heliotrope."
+  },
+  {
+    "plantId": "leucaena_leucocephala",
+    "tamilName": "சௌந்தல் (Subabul)",
+    "englishName": "Leadtree (Subabul)",
+    "scientificName": "Leucaena leucocephala",
+    "localName": "சுபாபுல் / Subabul",
+    "imageUrl": "https://picsum.photos/id/260/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "low",
+      "flower": "low",
+      "stem": "low",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Mimosine (toxic amino acid)",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Horse"
+    ],
+    "susceptibilityLevel": "low",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/260/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Leadtree (Subabul)."
+  },
+  {
+    "plantId": "pteridium_aquilinum",
+    "tamilName": "பிராகன் பெரணி",
+    "englishName": "Bracken Fern",
+    "scientificName": "Pteridium aquilinum",
+    "localName": "பெரணி / Bracken",
+    "imageUrl": "https://picsum.photos/id/270/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "high",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "high",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Ptaquiloside (carcinogen), thiaminase",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Horse"
+    ],
+    "susceptibilityLevel": "high",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/270/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Bracken Fern."
+  },
+  {
+    "plantId": "sorghum_halepense",
+    "tamilName": "ஜான்சன் புல்",
+    "englishName": "Johnsongrass",
+    "scientificName": "Sorghum halepense",
+    "localName": "ஜான்சன் புல் / Johnson Grass",
+    "imageUrl": "https://picsum.photos/id/280/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "high",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "high",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Cyanogenic glycosides (dhurrin), nitrates",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Buffalo",
+      "Horse"
+    ],
+    "susceptibilityLevel": "high",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/280/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Johnsongrass."
+  },
+  {
+    "plantId": "cassia_occidentalis",
+    "tamilName": "பொன்னாவிரை",
+    "englishName": "Coffee Senna",
+    "scientificName": "Cassia occidentalis",
+    "localName": "பேய்விரை / Ponnavirai",
+    "imageUrl": "https://picsum.photos/id/290/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "high",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "high",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Anthraquinones",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Buffalo"
+    ],
+    "susceptibilityLevel": "high",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/290/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Coffee Senna."
+  },
+  {
+    "plantId": "senna_tora",
+    "tamilName": "தகரை",
+    "englishName": "Sicklepod",
+    "scientificName": "Senna tora",
+    "localName": "தகரை / Takarai",
+    "imageUrl": "https://picsum.photos/id/302/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "medium",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "medium",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Anthraquinones, chrysophanol",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "medium",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/302/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Sicklepod."
+  },
+  {
+    "plantId": "melia_azedarach",
+    "tamilName": "மலைவேம்பு",
+    "englishName": "Chinaberry",
+    "scientificName": "Melia azedarach",
+    "localName": "மலைவேம்பு / Malaivembu",
+    "imageUrl": "https://picsum.photos/id/315/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "critical",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "critical",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Meliatoxins (limonoids)",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Pig",
+      "Dog",
+      "Cat"
+    ],
+    "susceptibilityLevel": "critical",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/315/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Chinaberry."
+  },
+  {
+    "plantId": "cannabis_sativa",
+    "tamilName": "கஞ்சா",
+    "englishName": "Hemp (Cannabis)",
+    "scientificName": "Cannabis sativa",
+    "localName": "கஞ்சா / Ganja",
+    "imageUrl": "https://picsum.photos/id/320/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "medium",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "medium",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Tetrahydrocannabinol (THC)",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Dog",
+      "Cat"
+    ],
+    "susceptibilityLevel": "medium",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/320/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Hemp (Cannabis)."
+  },
+  {
+    "plantId": "amaranthus_spinosus",
+    "tamilName": "முள் கீரை",
+    "englishName": "Spiny Amaranth",
+    "scientificName": "Amaranthus spinosus",
+    "localName": "முள் கீரை / Mullu Keerai",
+    "imageUrl": "https://picsum.photos/id/338/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "low",
+      "flower": "low",
+      "stem": "low",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Nitrates and oxalates",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Buffalo"
+    ],
+    "susceptibilityLevel": "low",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/338/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Spiny Amaranth."
+  },
+  {
+    "plantId": "chenopodium_album",
+    "tamilName": "பருப்புக்கீரை (Chenopodium)",
+    "englishName": "Lambs Quarters",
+    "scientificName": "Chenopodium album",
+    "localName": "பருப்புக்கீரை / Chenopodium",
+    "imageUrl": "https://picsum.photos/id/345/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "low",
+      "flower": "low",
+      "stem": "low",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Nitrates and soluble oxalates",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "low",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/345/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Lambs Quarters."
+  },
+  {
+    "plantId": "phytolacca_octandra",
+    "tamilName": "இருவாட்சி",
+    "englishName": "Inkberry",
+    "scientificName": "Phytolacca octandra",
+    "localName": "இருவாட்சி / Inkberry",
+    "imageUrl": "https://picsum.photos/id/350/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "medium",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "medium",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Phytolaccotoxin, saponins",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Dog",
+      "Cat"
+    ],
+    "susceptibilityLevel": "medium",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/350/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Inkberry."
+  },
+  {
+    "plantId": "crotalaria_spectabilis",
+    "tamilName": "கலகலப்பை",
+    "englishName": "Rattlebox",
+    "scientificName": "Crotalaria spectabilis",
+    "localName": "கலகலப்பை / Rattleweed",
+    "imageUrl": "https://picsum.photos/id/360/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "high",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "high",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Pyrrolizidine alkaloids (monocrotaline)",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Horse"
+    ],
+    "susceptibilityLevel": "high",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/360/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Rattlebox."
+  },
+  {
+    "plantId": "xanthium_strumarium",
+    "tamilName": "மருளூமத்தை",
+    "englishName": "Cocklebur",
+    "scientificName": "Xanthium strumarium",
+    "localName": "மருளூமத்தை / Cocklebur",
+    "imageUrl": "https://picsum.photos/id/370/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "high",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "high",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Carboxyatractyloside (glycoside)",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep",
+      "Buffalo"
+    ],
+    "susceptibilityLevel": "high",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/370/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Cocklebur."
+  },
+  {
+    "plantId": "solanum_viarum",
+    "tamilName": "காட்டுச் சுண்டைக்காய்",
+    "englishName": "Tropical Soda Apple",
+    "scientificName": "Solanum viarum",
+    "localName": "காட்டுச் சுண்டைக்காய் / Soda Apple",
+    "imageUrl": "https://picsum.photos/id/380/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "high",
+      "flower": "medium",
+      "stem": "low",
+      "seed": "high",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Solasodine (glycoalkaloid)",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "high",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/380/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Tropical Soda Apple."
+  },
+  {
+    "plantId": "brachiaria_decumbens",
+    "tamilName": "சிக்னல் புல்",
+    "englishName": "Signal Grass",
+    "scientificName": "Brachiaria decumbens",
+    "localName": "சிக்னல் புல் / Signal Grass",
+    "imageUrl": "https://picsum.photos/id/390/400/300",
+    "isHomeFeatured": true,
+    "toxicityByPart": {
+      "leaf": "low",
+      "flower": "low",
+      "stem": "low",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Steroidal saponins",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Often confused with surrounding non-toxic green pastures.",
+    "affectedAnimals": [
+      "Sheep",
+      "Goat",
+      "Cow"
+    ],
+    "susceptibilityLevel": "low",
+    "symptomOnsetTime": "6-12 hours after ingestion",
+    "symptomsText": "Digestive distress, mild colic, decreased feeding, salivation.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/390/400/300"
+    ],
+    "firstAid": "Isolate the animal immediately. Give fresh clean water. Contact vet if symptoms worsen.",
+    "treatment": "Provide supportive care, fluids, and anti-inflammatories as recommended by a vet.",
+    "warningMessage": "Keep livestock away from areas infested with Signal Grass."
+  },
+  {
+    "plantId": "solanum_surattense",
+    "tamilName": "கண்டங்கத்திரி",
+    "englishName": "Yellow-fruit Nightshade",
+    "scientificName": "Solanum surattense",
+    "localName": "கண்டங்கத்திரி / Kandangathiri",
+    "imageUrl": "https://picsum.photos/id/391/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "medium",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Solasodine",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "medium",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/391/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Yellow-fruit Nightshade."
+  },
+  {
+    "plantId": "asclepias_curassavica",
+    "tamilName": "காட்டு எருக்கன்",
+    "englishName": "Bloodflower",
+    "scientificName": "Ascelpias curassavica",
+    "localName": "காட்டு எருக்கன்",
+    "imageUrl": "https://picsum.photos/id/392/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "high",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Asclepin",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "high",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/392/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Bloodflower."
+  },
+  {
+    "plantId": "adenium_obesum",
+    "tamilName": "பாலை ரோஜா",
+    "englishName": "Desert Rose",
+    "scientificName": "Adenium obesum",
+    "localName": "பாலை ரோஜா",
+    "imageUrl": "https://picsum.photos/id/393/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "high",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Cardioactive glycosides",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "high",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/393/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Desert Rose."
+  },
+  {
+    "plantId": "plumeria_rubra",
+    "tamilName": "செம்பவளமல்லி",
+    "englishName": "Red Frangipani",
+    "scientificName": "Plumeria rubra",
+    "localName": "செம்பவளமல்லி",
+    "imageUrl": "https://picsum.photos/id/394/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "low",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Irritant latex",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "low",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/394/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Red Frangipani."
+  },
+  {
+    "plantId": "dieffenbachia_seguine",
+    "tamilName": "ஊமை கரும்பு",
+    "englishName": "Dumb Cane",
+    "scientificName": "Dieffenbachia seguine",
+    "localName": "ஊமை கரும்பு",
+    "imageUrl": "https://picsum.photos/id/395/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "high",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Calcium oxalate raphides",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "high",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/395/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Dumb Cane."
+  },
+  {
+    "plantId": "caladium_bicolor",
+    "tamilName": "அலங்கார செம்பருத்தி",
+    "englishName": "Heart of Jesus",
+    "scientificName": "Caladium bicolor",
+    "localName": "அலங்கார செடி",
+    "imageUrl": "https://picsum.photos/id/396/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "medium",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Calcium oxalate crystals",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "medium",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/396/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Heart of Jesus."
+  },
+  {
+    "plantId": "colocasia_esculenta",
+    "tamilName": "சேப்பங்கிழங்கு இலை",
+    "englishName": "Wild Taro",
+    "scientificName": "Colocasia esculenta",
+    "localName": "சேப்பங்கிழங்கு",
+    "imageUrl": "https://picsum.photos/id/397/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "low",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Calcium oxalates",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "low",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/397/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Wild Taro."
+  },
+  {
+    "plantId": "alocasia_macrorrhizos",
+    "tamilName": "ராட்சத சேம்பு",
+    "englishName": "Giant Taro",
+    "scientificName": "Alocasia macrorrhizos",
+    "localName": "ராட்சத சேம்பு",
+    "imageUrl": "https://picsum.photos/id/398/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "low",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Calcium oxalate crystals",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "low",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/398/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Giant Taro."
+  },
+  {
+    "plantId": "amaryllis_belladonna",
+    "tamilName": "லில்லி",
+    "englishName": "Belladonna Lily",
+    "scientificName": "Amaryllis belladonna",
+    "localName": "லில்லி பூ",
+    "imageUrl": "https://picsum.photos/id/399/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "medium",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Lycorine alkaloid",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "medium",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/399/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Belladonna Lily."
+  },
+  {
+    "plantId": "anagallis_arvensis",
+    "tamilName": "ஆடு மேய்ச்சல் பூண்டு",
+    "englishName": "Scarlet Pimpernel",
+    "scientificName": "Anagallis arvensis",
+    "localName": "நீலப்பூண்டு",
+    "imageUrl": "https://picsum.photos/id/401/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "medium",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Saponins, toxic cyclic peptides",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "medium",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/401/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Scarlet Pimpernel."
+  },
+  {
+    "plantId": "ranunculus_sceleratus",
+    "tamilName": "நீர் முட்டி",
+    "englishName": "Celery-leaved Buttercup",
+    "scientificName": "Ranunculus sceleratus",
+    "localName": "நீர் முட்டி",
+    "imageUrl": "https://picsum.photos/id/402/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "high",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Protoanemonin",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "high",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/402/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Celery-leaved Buttercup."
+  },
+  {
+    "plantId": "solanum_tuberosum",
+    "tamilName": "உருளைக்கிழங்கு தழை",
+    "englishName": "Potato Greens",
+    "scientificName": "Solanum tuberosum",
+    "localName": "உருளை இலை",
+    "imageUrl": "https://picsum.photos/id/403/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "medium",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Solanine",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "medium",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/403/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Potato Greens."
+  },
+  {
+    "plantId": "tribulus_cistoides",
+    "tamilName": "பெரு நெருஞ்சி",
+    "englishName": "Jamaica Feverplant",
+    "scientificName": "Tribulus cistoides",
+    "localName": "பெரு நெருஞ்சி",
+    "imageUrl": "https://picsum.photos/id/404/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "low",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Steroidal saponins",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "low",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/404/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Jamaica Feverplant."
+  },
+  {
+    "plantId": "hymenocallis_littoralis",
+    "tamilName": "சிலந்தி லில்லி",
+    "englishName": "Beach Spider Lily",
+    "scientificName": "Hymenocallis littoralis",
+    "localName": "சிலந்தி லில்லி",
+    "imageUrl": "https://picsum.photos/id/405/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "low",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Lycorine",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "low",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/405/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Beach Spider Lily."
+  },
+  {
+    "plantId": "zantedeschia_aethiopica",
+    "tamilName": "காலா லில்லி",
+    "englishName": "Calla Lily",
+    "scientificName": "Zantedeschia aethiopica",
+    "localName": "காலா லில்லி",
+    "imageUrl": "https://picsum.photos/id/406/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "medium",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Calcium oxalate",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "medium",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/406/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Calla Lily."
+  },
+  {
+    "plantId": "monstera_deliciosa",
+    "tamilName": "ராட்சத இலை",
+    "englishName": "Swiss Cheese Plant",
+    "scientificName": "Monstera deliciosa",
+    "localName": "அலங்கார இலை",
+    "imageUrl": "https://picsum.photos/id/407/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "medium",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Insoluble oxalates",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "medium",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/407/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Swiss Cheese Plant."
+  },
+  {
+    "plantId": "philodendron_hederaceum",
+    "tamilName": "இதய இலை",
+    "englishName": "Heartleaf Philodendron",
+    "scientificName": "Philodendron hederaceum",
+    "localName": "இதய இலை",
+    "imageUrl": "https://picsum.photos/id/408/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "medium",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Calcium oxalate crystals",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "medium",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/408/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Heartleaf Philodendron."
+  },
+  {
+    "plantId": "ficus_benjamina",
+    "tamilName": "அலங்கார ஆலமரம்",
+    "englishName": "Weeping Fig",
+    "scientificName": "Ficus benjamina",
+    "localName": "அலங்கார ஆலமரம்",
+    "imageUrl": "https://picsum.photos/id/409/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "low",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Ficin, ficusin",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "low",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/409/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Weeping Fig."
+  },
+  {
+    "plantId": "euphorbia_pulcherrima",
+    "tamilName": "கிறிஸ்துமஸ் செடி",
+    "englishName": "Poinsettia",
+    "scientificName": "Euphorbia pulcherrima",
+    "localName": "கிறிஸ்துமஸ் செடி",
+    "imageUrl": "https://picsum.photos/id/410/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "low",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Diterpenoid esters in milky sap",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "low",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/410/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Poinsettia."
+  },
+  {
+    "plantId": "plumbago_zeylanica",
+    "tamilName": "சித்திரமூலம்",
+    "englishName": "Ceylon Leadwort",
+    "scientificName": "Plumbago zeylanica",
+    "localName": "சித்திரமூலம் / Chithiramoolam",
+    "imageUrl": "https://picsum.photos/id/411/400/300",
+    "isHomeFeatured": false,
+    "toxicityByPart": {
+      "leaf": "medium",
+      "flower": "low",
+      "stem": "none",
+      "seed": "low",
+      "root": "low",
+      "fruit": "none"
+    },
+    "toxicComponents": "Plumbagin",
+    "suitableForFeeding": false,
+    "similarPlantWarning": "Confused with common field weeds.",
+    "affectedAnimals": [
+      "Cow",
+      "Goat",
+      "Sheep"
+    ],
+    "susceptibilityLevel": "medium",
+    "symptomOnsetTime": "12-24 hours after ingestion",
+    "symptomsText": "Mild oral irritation, hypersalivation, decreased milk production.",
+    "symptomImageUrls": [
+      "https://picsum.photos/id/411/400/300"
+    ],
+    "firstAid": "Provide soft food and water. Clean the oral cavity.",
+    "treatment": "Supportive fluid therapy and anti-inflammatory drugs.",
+    "warningMessage": "Monitor pastures for Ceylon Leadwort."
+  }
+]
