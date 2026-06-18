@@ -41,7 +41,7 @@ class ToxicPlantApp extends ConsumerWidget {
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.light,
-      scaffoldBackgroundColor: const Color(0xFFF8FAF8),
+      scaffoldBackgroundColor: Colors.transparent,
       colorScheme: ColorScheme.fromSeed(
         seedColor: const Color(0xFF2E7D32),
         primary: const Color(0xFF2E7D32),
@@ -84,7 +84,7 @@ class ToxicPlantApp extends ConsumerWidget {
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.dark,
-      scaffoldBackgroundColor: const Color(0xFF0F1610),
+      scaffoldBackgroundColor: Colors.transparent,
       colorScheme: ColorScheme.fromSeed(
         seedColor: const Color(0xFF2E7D32),
         primary: const Color(0xFF4CAF50),

@@ -1,7 +1,9 @@
 import 'dart:math';
+import 'dart:ui' as dart_ui;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../widgets/themed_background.dart';
 
 
 import '../models/plant.dart';
@@ -54,36 +56,56 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
     final tr = ref.read(translationProvider);
     String t(String key) => tr[key]?[isTamil ? 'tamil' : 'english'] ?? key;
 
-    return Scaffold(
-      body: IndexedStack(
-        index: _currentNavIndex,
-        children: screens,
-      ),
-      extendBody: true,
-      bottomNavigationBar: Container(
-        margin: const EdgeInsets.fromLTRB(20, 0, 20, 16),
-        decoration: BoxDecoration(
-          color: Theme.of(context).cardTheme.color,
-          borderRadius: BorderRadius.circular(28),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withValues(alpha: 0.08),
-              blurRadius: 20,
-              offset: const Offset(0, 4),
-            ),
-          ],
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    return ThemedBackground(
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        body: IndexedStack(
+          index: _currentNavIndex,
+          children: screens,
         ),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 6),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              _navItem(Icons.home_rounded, t('home'), 0),
-              _navItem(Icons.search_rounded, t('search'), 1),
-              _scanButton(),
-              _navItem(Icons.menu_book_rounded, t('dictionary'), 3),
-              _navItem(Icons.person_rounded, t('profile'), 4),
-            ],
+        extendBody: true,
+        bottomNavigationBar: Container(
+          margin: const EdgeInsets.fromLTRB(20, 0, 20, 16),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(28),
+            child: BackdropFilter(
+              filter: isDark 
+                ? dart_ui.ImageFilter.blur(sigmaX: 20, sigmaY: 20)
+                : dart_ui.ImageFilter.blur(sigmaX: 0, sigmaY: 0),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: isDark 
+                    ? Colors.white.withValues(alpha: 0.08) 
+                    : Colors.white,
+                  borderRadius: BorderRadius.circular(28),
+                  border: isDark 
+                    ? Border.all(color: Colors.white.withValues(alpha: 0.15))
+                    : null,
+                  boxShadow: isDark ? [] : [
+                    BoxShadow(
+                      color: Colors.black.withValues(alpha: 0.08),
+                      blurRadius: 20,
+                      offset: const Offset(0, 4),
+                    ),
+                  ],
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 6),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      _navItem(Icons.home_rounded, t('home'), 0),
+                      _navItem(Icons.search_rounded, t('search'), 1),
+                      _scanButton(),
+                      _navItem(Icons.menu_book_rounded, t('dictionary'), 3),
+                      _navItem(Icons.person_rounded, t('profile'), 4),
+                    ],
+                  ),
+                ),
+              ),
+            ),
           ),
         ),
       ),
@@ -97,30 +119,35 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
         Theme.of(context).textTheme.bodyMedium?.color?.withValues(alpha: 0.4) ??
             Colors.grey;
 
-    return GestureDetector(
-      onTap: () => setState(() => _currentNavIndex = index),
-      behavior: HitTestBehavior.opaque,
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 200),
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-        decoration: BoxDecoration(
-          color: isActive ? activeColor.withValues(alpha: 0.1) : Colors.transparent,
-          borderRadius: BorderRadius.circular(16),
-        ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Icon(icon, color: isActive ? activeColor : inactiveColor, size: 22),
-            const SizedBox(height: 2),
-            Text(
-              label,
-              style: GoogleFonts.outfit(
-                fontSize: 10,
-                fontWeight: isActive ? FontWeight.w700 : FontWeight.w500,
-                color: isActive ? activeColor : inactiveColor,
+    return Expanded(
+      child: GestureDetector(
+        onTap: () => setState(() => _currentNavIndex = index),
+        behavior: HitTestBehavior.opaque,
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 200),
+          padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+          decoration: BoxDecoration(
+            color: isActive ? activeColor.withValues(alpha: 0.1) : Colors.transparent,
+            borderRadius: BorderRadius.circular(16),
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(icon, color: isActive ? activeColor : inactiveColor, size: 22),
+              const SizedBox(height: 2),
+              Text(
+                label,
+                textAlign: TextAlign.center,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: GoogleFonts.outfit(
+                  fontSize: 10,
+                  fontWeight: isActive ? FontWeight.w700 : FontWeight.w500,
+                  color: isActive ? activeColor : inactiveColor,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
@@ -179,28 +206,34 @@ class _HomeContent extends ConsumerWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          t('greeting'),
-                          style: GoogleFonts.outfit(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600,
-                            color: Theme.of(context).textTheme.bodyLarge?.color,
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            t('greeting'),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: GoogleFonts.outfit(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                              color: Theme.of(context).textTheme.bodyLarge?.color,
+                            ),
                           ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          t('subtitle_label'),
-                          style: GoogleFonts.outfit(
-                            fontSize: 11,
-                            fontWeight: FontWeight.w700,
-                            color: const Color(0xFF2E7D32),
-                            letterSpacing: 2,
+                          const SizedBox(height: 2),
+                          Text(
+                            t('subtitle_label'),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: GoogleFonts.outfit(
+                              fontSize: 11,
+                              fontWeight: FontWeight.w700,
+                              color: const Color(0xFF2E7D32),
+                              letterSpacing: 2,
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                     Row(
                       children: [
@@ -241,13 +274,17 @@ class _HomeContent extends ConsumerWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    Text(
-                      t('main_title'),
-                      style: GoogleFonts.outfit(
-                        fontSize: 36,
-                        fontWeight: FontWeight.w800,
-                        color: Theme.of(context).textTheme.bodyLarge?.color,
-                        height: 1.1,
+                    Expanded(
+                      child: Text(
+                        t('main_title'),
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: GoogleFonts.outfit(
+                          fontSize: 36,
+                          fontWeight: FontWeight.w800,
+                          color: Theme.of(context).textTheme.bodyLarge?.color,
+                          height: 1.1,
+                        ),
                       ),
                     ),
                     GestureDetector(
@@ -402,12 +439,16 @@ class _HomeContent extends ConsumerWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(t('scan_plant'),
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
                                   style: GoogleFonts.outfit(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w700,
                                       color: Colors.white)),
                               const SizedBox(height: 4),
                               Text(t('scan_subtitle'),
+                                  maxLines: 2,
+                                  overflow: TextOverflow.ellipsis,
                                   style: GoogleFonts.outfit(
                                       fontSize: 12, color: Colors.white70)),
                             ],
@@ -467,11 +508,16 @@ class _SectionHeader extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(title,
-              style: GoogleFonts.outfit(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w700,
-                  color: Theme.of(context).textTheme.bodyLarge?.color)),
+          Expanded(
+            child: Text(title,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: GoogleFonts.outfit(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w700,
+                    color: Theme.of(context).textTheme.bodyLarge?.color)),
+          ),
+          const SizedBox(width: 16),
           GestureDetector(
             onTap: onTap,
             child: Text(actionLabel,

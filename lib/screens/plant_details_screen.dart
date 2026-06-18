@@ -1,4 +1,6 @@
 import 'dart:async';
+import '../widgets/glass_card.dart';
+import '../widgets/themed_background.dart';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -8,6 +10,7 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import '../models/plant.dart';
 import '../data/vet_hospitals.dart';
 import '../providers/language_provider.dart';
@@ -31,15 +34,21 @@ class _PlantDetailsScreenState extends ConsumerState<PlantDetailsScreen> {
   StreamSubscription<Position>? _positionStream;
   final MapController _mapController = MapController();
   VetHospital? _nearestHospital;
+  final FlutterTts flutterTts = FlutterTts();
+  bool isPlaying = false;
 
   @override
   void initState() {
     super.initState();
     if (widget.showVetButton) _startLiveLocation();
+    flutterTts.setCompletionHandler(() {
+      if (mounted) setState(() => isPlaying = false);
+    });
   }
 
   @override
   void dispose() {
+    flutterTts.stop();
     _positionStream?.cancel();
     super.dispose();
   }
@@ -89,6 +98,24 @@ class _PlantDetailsScreenState extends ConsumerState<PlantDetailsScreen> {
     if (await canLaunchUrl(uri)) await launchUrl(uri);
   }
 
+  Future<void> _speakTamil(Plant plant) async {
+    if (isPlaying) {
+      await flutterTts.stop();
+      setState(() => isPlaying = false);
+      return;
+    }
+    
+    await flutterTts.setLanguage("ta-IN");
+    await flutterTts.setPitch(1.0);
+    
+    String textToSpeak = plant.isHarmful 
+        ? "எச்சரிக்கை! ${plant.tamilName} மாடுகளுக்கு ஆபத்தானது. அறிகுறிகள்: ${plant.tamilSymptoms} முதல் உதவி: ${plant.tamilFirstAid} தயவுசெய்து உடனடியாக அருகில் உள்ள கால்நடை மருத்துவமனைக்கு செல்லவும்."
+        : "${plant.tamilName} ஒரு பாதுகாப்பான தாவரம். இது மாடுகளுக்கு நல்ல தீவனம்.";
+        
+    setState(() => isPlaying = true);
+    await flutterTts.speak(textToSpeak);
+  }
+
   @override
   Widget build(BuildContext context) {
     final plant = widget.plant;
@@ -98,15 +125,17 @@ class _PlantDetailsScreenState extends ConsumerState<PlantDetailsScreen> {
     final tr = ref.read(translationProvider);
     String t(String key) => tr[key]?[isTamil ? 'tamil' : 'english'] ?? key;
 
-    return Scaffold(
-      body: CustomScrollView(
-        physics: const BouncingScrollPhysics(),
-        slivers: [
-          // Hero image
-          SliverAppBar(
-            expandedHeight: 340,
-            pinned: true,
-            backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+    return ThemedBackground(
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        body: CustomScrollView(
+          physics: const BouncingScrollPhysics(),
+          slivers: [
+            // Hero image
+            SliverAppBar(
+              expandedHeight: 340,
+              pinned: true,
+              backgroundColor: Colors.transparent,
             leading: Padding(
               padding: const EdgeInsets.all(8.0),
               child: GestureDetector(
@@ -121,6 +150,30 @@ class _PlantDetailsScreenState extends ConsumerState<PlantDetailsScreen> {
               ),
             ),
             actions: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: GestureDetector(
+                  onTap: () => _speakTamil(plant),
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    decoration: BoxDecoration(
+                      color: isPlaying ? Colors.blue : Colors.black.withValues(alpha: 0.3),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Row(
+                      children: [
+                        Icon(
+                          isPlaying ? Icons.stop_circle_rounded : Icons.volume_up_rounded,
+                          color: Colors.white,
+                          size: 20,
+                        ),
+                        const SizedBox(width: 6),
+                        Text('தமிழ்', style: GoogleFonts.outfit(color: Colors.white, fontWeight: FontWeight.bold)),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
@@ -166,13 +219,17 @@ class _PlantDetailsScreenState extends ConsumerState<PlantDetailsScreen> {
                     ),
                   ),
                   Positioned(
-                    bottom: 16, left: 24,
+                    bottom: 16, left: 24, right: 24,
                     child: Row(
                       children: [
                         const Icon(Icons.location_on_rounded, size: 14, color: Colors.white70),
                         const SizedBox(width: 4),
-                        Text(plant.region,
-                            style: GoogleFonts.outfit(fontSize: 12, fontWeight: FontWeight.w500, color: Colors.white70)),
+                        Expanded(
+                          child: Text(plant.region,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: GoogleFonts.outfit(fontSize: 12, fontWeight: FontWeight.w500, color: Colors.white70)),
+                        ),
                       ],
                     ),
                   ),
@@ -197,16 +254,9 @@ class _PlantDetailsScreenState extends ConsumerState<PlantDetailsScreen> {
                           color: const Color(0xFF2E7D32))),
                   const SizedBox(height: 20),
 
-                  // Stats row
-                  Container(
+                  GlassCard(
+                    borderRadius: 20,
                     padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      color: Theme.of(context).cardTheme.color,
-                      borderRadius: BorderRadius.circular(20),
-                      boxShadow: [BoxShadow(
-                          color: Colors.black.withValues(alpha: 0.05),
-                          blurRadius: 10, offset: const Offset(0, 3))],
-                    ),
                     child: Row(
                       children: [
                         _stat(Icons.warning_amber_rounded,
@@ -253,16 +303,9 @@ class _PlantDetailsScreenState extends ConsumerState<PlantDetailsScreen> {
                   Text(t('about_plant'),
                       style: GoogleFonts.outfit(fontSize: 18, fontWeight: FontWeight.w700,
                           color: Theme.of(context).textTheme.bodyLarge?.color)),
-                  const SizedBox(height: 12),
-                  Container(
+                  GlassCard(
+                    borderRadius: 20,
                     padding: const EdgeInsets.all(20),
-                    decoration: BoxDecoration(
-                      color: Theme.of(context).cardTheme.color,
-                      borderRadius: BorderRadius.circular(20),
-                      boxShadow: [BoxShadow(
-                          color: Colors.black.withValues(alpha: 0.05),
-                          blurRadius: 10, offset: const Offset(0, 3))],
-                    ),
                     child: Text(
                       isTamil ? plant.tamilDescription : plant.description,
                       style: GoogleFonts.outfit(
@@ -271,6 +314,58 @@ class _PlantDetailsScreenState extends ConsumerState<PlantDetailsScreen> {
                     ),
                   ),
                   const SizedBox(height: 28),
+
+                  if (isHarmful) ...[
+                    Text(isTamil ? 'அறிகுறிகள் (Symptoms)' : 'Symptoms',
+                        style: GoogleFonts.outfit(fontSize: 18, fontWeight: FontWeight.w700,
+                            color: Theme.of(context).textTheme.bodyLarge?.color)),
+                    const SizedBox(height: 12),
+                    Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: Colors.orange.withValues(alpha: 0.1),
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Icon(Icons.sick_rounded, color: Colors.orange, size: 24),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Text(isTamil ? plant.tamilSymptoms : plant.symptoms,
+                                style: GoogleFonts.outfit(fontSize: 14, height: 1.5,
+                                    color: Theme.of(context).textTheme.bodyLarge?.color)),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+
+                    Text(isTamil ? 'முதல் உதவி (First Aid)' : 'First Aid',
+                        style: GoogleFonts.outfit(fontSize: 18, fontWeight: FontWeight.w700,
+                            color: Theme.of(context).textTheme.bodyLarge?.color)),
+                    const SizedBox(height: 12),
+                    Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: Colors.blue.withValues(alpha: 0.1),
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Icon(Icons.medical_services_rounded, color: Colors.blue, size: 24),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Text(isTamil ? plant.tamilFirstAid : plant.firstAid,
+                                style: GoogleFonts.outfit(fontSize: 14, height: 1.5,
+                                    color: Theme.of(context).textTheme.bodyLarge?.color)),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 28),
+                  ],
 
                   // Vet section
                   if (widget.showVetButton) ...[
@@ -287,7 +382,7 @@ class _PlantDetailsScreenState extends ConsumerState<PlantDetailsScreen> {
           ),
         ],
       ),
-    );
+    ));
   }
 
   Widget _stat(IconData icon, Color iconColor, String value, String label, BuildContext context) {
@@ -304,7 +399,9 @@ class _PlantDetailsScreenState extends ConsumerState<PlantDetailsScreen> {
           Text(label,
               style: GoogleFonts.outfit(fontSize: 10,
                   color: Theme.of(context).textTheme.bodySmall?.color),
-              textAlign: TextAlign.center),
+              textAlign: TextAlign.center,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis),
         ],
       ),
     );
@@ -317,14 +414,8 @@ class _PlantDetailsScreenState extends ConsumerState<PlantDetailsScreen> {
     final hospital = _nearestHospital ?? vetHospitals[2];
     final vetLoc = LatLng(hospital.latitude, hospital.longitude);
 
-    return Container(
-      decoration: BoxDecoration(
-        color: Theme.of(context).cardTheme.color,
-        borderRadius: BorderRadius.circular(20),
-        boxShadow: [BoxShadow(
-            color: Colors.black.withValues(alpha: 0.05),
-            blurRadius: 10, offset: const Offset(0, 3))],
-      ),
+    return GlassCard(
+      borderRadius: 20,
       child: Column(
         children: [
           Padding(

@@ -14,6 +14,10 @@ final List<Plant> mockPlants = [
     isEatable: false,
     isHarmful: true,
     region: 'India, South Asia',
+    symptoms: 'Severe liver damage, jaundice, sensitivity to sunlight, weakness, loss of appetite, and constipation.',
+    tamilSymptoms: 'கல்லீரல் பாதிப்பு, மஞ்சள் காமாலை, சூரிய ஒளிக்கு கூச்சம், உடல் சோர்வு, பசியின்மை, மற்றும் மலச்சிக்கல்.',
+    firstAid: 'Remove from the source immediately. Keep in shade to prevent sun damage. Provide lots of water and call vet immediately.',
+    tamilFirstAid: 'உடனே இந்த செடியிலிருந்து விலங்கை அப்புறப்படுத்தவும். சூரிய ஒளியில் இருந்து காக்க நிழலில் கட்டவும். நிறைய தண்ணீர் கொடுக்கவும், உடனடியாக மருத்துவரை அழைக்கவும்.',
   ),
   Plant(
     plantId: 'p02',
@@ -27,6 +31,10 @@ final List<Plant> mockPlants = [
     isEatable: false,
     isHarmful: true,
     region: 'India, South Asia',
+    symptoms: 'Severe skin irritation, drooling, diarrhea, respiratory distress, and fever.',
+    tamilSymptoms: 'கடுமையான தோல் எரிச்சல், எச்சில் வடிதல், வயிற்றுப்போக்கு, மூச்சுத் திணறல், மற்றும் காய்ச்சல்.',
+    firstAid: 'Wash affected skin with plenty of water. Do not let them eat any more. Call vet immediately.',
+    tamilFirstAid: 'பாதிக்கப்பட்ட தோலை நிறைய தண்ணீர் கொண்டு கழுவவும். மீண்டும் சாப்பிட விட வேண்டாம். உடனடியாக மருத்துவரை அழைக்கவும்.',
   ),
   Plant(
     plantId: 'p03',
@@ -40,6 +48,10 @@ final List<Plant> mockPlants = [
     isEatable: false,
     isHarmful: true,
     region: 'India, South Asia',
+    symptoms: 'Severe irritation in mouth, stomach pain, vomiting, diarrhea, and abnormal heart rhythm.',
+    tamilSymptoms: 'வாயில் கடுமையான எரிச்சல், வயிற்று வலி, வாந்தி, வயிற்றுப்போக்கு, மற்றும் சீரற்ற இதயத் துடிப்பு.',
+    firstAid: 'Do not induce vomiting without vet advice. Give clean water and transport to hospital quickly.',
+    tamilFirstAid: 'மருத்துவர் அறிவுரையின்றி வாந்தி எடுக்க வைக்க வேண்டாம். சுத்தமான தண்ணீர் கொடுத்து விரைவில் மருத்துவமனைக்கு கொண்டு செல்லவும்.',
   ),
   Plant(
     plantId: 'p04',
@@ -66,6 +78,10 @@ final List<Plant> mockPlants = [
     isEatable: false,
     isHarmful: true,
     region: 'India, South Asia',
+    symptoms: 'Irregular heartbeat, sweating, muscle tremors, seizures, and sudden death.',
+    tamilSymptoms: 'சீரற்ற இதயத் துடிப்பு, அதிக வியர்வை, தசை நடுக்கம், வலிப்பு, மற்றும் திடீர் இறப்பு.',
+    firstAid: 'Extremely critical. Do not force feed anything. Call a vet immediately for activated charcoal administration.',
+    tamilFirstAid: 'இது மிகவும் ஆபத்தானது. கட்டாயப்படுத்தி எதையும் ஊட்ட வேண்டாம். உடனடியாக மருத்துவரை அழைக்கவும்.',
   ),
   Plant(
     plantId: 'p06',

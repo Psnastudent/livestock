@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/glass_card.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../providers/theme_provider.dart';
@@ -12,7 +13,6 @@ class ProfileScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final themeMode = ref.watch(themeProvider);
-    final userProfile = ref.watch(authProvider);
     final lang = ref.watch(languageProvider);
     final isTamil = lang == AppLanguage.tamil;
     final tr = ref.read(translationProvider);
@@ -36,44 +36,16 @@ class ProfileScreen extends ConsumerWidget {
                   style: GoogleFonts.outfit(fontSize: 24, fontWeight: FontWeight.w800,
                       color: Theme.of(context).textTheme.bodyLarge?.color)),
             ),
-            const SizedBox(height: 40),
+            const SizedBox(height: 24),
 
-            // Avatar
-            Container(
-              width: 100, height: 100,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: const Color(0xFFE8F5E9),
-                border: Border.all(color: const Color(0xFF2E7D32), width: 3),
-              ),
-              child: ClipOval(
-                child: Image.network(
-                  userProfile?.photoUrl ?? 'https://picsum.photos/200',
-                  fit: BoxFit.cover,
-                  errorBuilder: (_, __, ___) =>
-                      const Icon(Icons.person_rounded, size: 48, color: Color(0xFF2E7D32)),
-                ),
-              ),
-            ),
-            const SizedBox(height: 20),
-            Text(userProfile?.name ?? (isTamil ? 'விருந்தினர்' : 'Guest User'),
-                style: GoogleFonts.outfit(fontSize: 24, fontWeight: FontWeight.w800,
-                    color: Theme.of(context).textTheme.bodyLarge?.color)),
-            const SizedBox(height: 6),
-            Text(userProfile?.email ?? (isTamil ? 'உள்நுழையவில்லை' : 'Not logged in'),
-                style: GoogleFonts.outfit(fontSize: 14,
-                    color: Theme.of(context).textTheme.bodyMedium?.color)),
+            // New Profile Card UI
+            const _ProfileHeaderCard(),
+            
             const SizedBox(height: 36),
 
             // Settings
-            Container(
-              decoration: BoxDecoration(
-                color: Theme.of(context).cardTheme.color,
-                borderRadius: BorderRadius.circular(20),
-                boxShadow: [BoxShadow(
-                    color: Colors.black.withValues(alpha: 0.05),
-                    blurRadius: 10, offset: const Offset(0, 3))],
-              ),
+            GlassCard(
+              borderRadius: 20,
               child: Column(
                 children: [
                   _tile(context,
@@ -171,6 +143,91 @@ class ProfileScreen extends ConsumerWidget {
             style: GoogleFonts.outfit(
                 fontSize: 12, fontWeight: FontWeight.w700,
                 color: active ? Colors.white : const Color(0xFF2E7D32))),
+      ),
+    );
+  }
+}
+
+class _ProfileHeaderCard extends ConsumerWidget {
+  const _ProfileHeaderCard();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final themeMode = ref.watch(themeProvider);
+    final userProfile = ref.watch(authProvider);
+    
+    final isDark = themeMode == ThemeMode.dark ||
+        (themeMode == ThemeMode.system &&
+            MediaQuery.platformBrightnessOf(context) == Brightness.dark);
+    
+    final textColor = isDark ? Colors.white : Colors.black;
+    final subTextColor = isDark ? Colors.grey[400] : Colors.grey[600];
+    
+    // Fallback info if user is not logged in
+    final userName = userProfile?.name ?? 'Guest User';
+    final userHandle = '@${userName.toLowerCase().replaceAll(' ', '_')}';
+    
+    return GlassCard(
+      borderRadius: 24,
+      padding: const EdgeInsets.all(20),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  userName,
+                  style: GoogleFonts.outfit(
+                    fontSize: 22,
+                    fontWeight: FontWeight.w800,
+                    color: textColor,
+                  ),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                Text(
+                  userHandle,
+                  style: GoogleFonts.outfit(
+                    fontSize: 15,
+                    color: subTextColor,
+                  ),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ],
+            ),
+          ),
+          Row(
+            children: [
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: isDark ? Colors.white : Colors.black,
+                  foregroundColor: isDark ? Colors.black : Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
+                  minimumSize: const Size(0, 36),
+                  elevation: 0,
+                ),
+                child: Text('Follow', style: GoogleFonts.outfit(fontWeight: FontWeight.w600, fontSize: 13)),
+              ),
+              const SizedBox(width: 8),
+              Container(
+                width: 36,
+                height: 36,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(color: Colors.grey.withValues(alpha: 0.3)),
+                ),
+                child: Icon(Icons.bookmark_border_rounded, size: 18, color: textColor),
+              ),
+            ],
+          )
+        ],
       ),
     );
   }

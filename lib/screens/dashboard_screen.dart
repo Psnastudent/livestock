@@ -6,6 +6,8 @@ import '../providers/auth_provider.dart';
 import '../providers/locale_provider.dart';
 
 
+import '../widgets/themed_background.dart';
+
 class DashboardScreen extends ConsumerWidget {
   const DashboardScreen({super.key});
 
@@ -31,18 +33,17 @@ class DashboardScreen extends ConsumerWidget {
     final user = ref.watch(authProvider);
 
     if (user == null) {
-      return Scaffold(
+      return const Scaffold(
+        backgroundColor: Colors.transparent,
         body: Center(
-          child: Text(
-            lang == 'ta' ? 'அணுகல் மறுக்கப்பட்டது' : 'Access Denied',
-            style: const TextStyle(fontSize: 18),
-          ),
+          child: Text('Access Denied', style: TextStyle(fontSize: 18)),
         ),
       );
     }
 
-    return Scaffold(
-      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+    return ThemedBackground(
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
       appBar: AppBar(
         title: Text(
           lang == 'ta' ? 'எனது சுயவிவரம்' : 'My Profile',
@@ -195,6 +196,6 @@ class DashboardScreen extends ConsumerWidget {
           ],
         ),
       ),
-    );
+    ));
   }
 }

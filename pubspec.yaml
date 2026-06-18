@@ -51,6 +51,7 @@ dependencies:
   url_launcher: ^6.2.5
   tflite_flutter: ^0.12.1
   image: ^4.8.0
+  flutter_tts: ^3.8.5
 
 dependency_overrides:
   package_info_plus: ^8.1.1

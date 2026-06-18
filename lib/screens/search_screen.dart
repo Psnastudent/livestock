@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/glass_card.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -64,18 +65,8 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
           // Search bar
           Padding(
             padding: const EdgeInsets.fromLTRB(24, 16, 24, 8),
-            child: Container(
-              decoration: BoxDecoration(
-                color: Theme.of(context).cardTheme.color,
-                borderRadius: BorderRadius.circular(18),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withValues(alpha: 0.05),
-                    blurRadius: 10,
-                    offset: const Offset(0, 2),
-                  ),
-                ],
-              ),
+            child: GlassCard(
+              borderRadius: 18,
               child: TextField(
                 onChanged: (val) => setState(() => _searchQuery = val),
                 style: GoogleFonts.outfit(color: Theme.of(context).textTheme.bodyLarge?.color),
@@ -213,18 +204,8 @@ class _GridCardState extends State<_GridCard> {
       child: AnimatedScale(
         scale: _pressed ? 0.95 : 1.0,
         duration: const Duration(milliseconds: 150),
-        child: Container(
-          decoration: BoxDecoration(
-            color: Theme.of(context).cardTheme.color,
-            borderRadius: BorderRadius.circular(20),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withValues(alpha: 0.05),
-                blurRadius: 10,
-                offset: const Offset(0, 3),
-              ),
-            ],
-          ),
+        child: GlassCard(
+          borderRadius: 20,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
